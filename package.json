@@ -1,0 +1,13 @@
+{
+  "name": "cperko",
+  "version": "1.0.0",
+  "author": "Chris Perko",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat-css": "^2.3.0"
+  }
+}
