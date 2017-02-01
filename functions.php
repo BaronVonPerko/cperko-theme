@@ -106,6 +106,7 @@ add_action( 'widgets_init', 'cperko_widgets_init' );
  */
 function cperko_scripts() {
 	wp_enqueue_style( 'cperko-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'cperko-custom-style', get_template_directory_uri() . '/dist/custom.css' );
 
 	wp_enqueue_script( 'cperko-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
