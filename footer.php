@@ -24,5 +24,10 @@
 
 <?php wp_footer(); ?>
 
+<!-- browser-sync : remove for production -->
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='https://HOST:8082/browser-sync/browser-sync-client.js?v=2.18.2'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
 </body>
 </html>
