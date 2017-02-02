@@ -30,6 +30,19 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
+		<style>
+			.site-branding {
+				background-image: url(<?php echo get_header_image(); ?>);
+				<?php
+					if( is_front_page() && is_home() ) {
+						echo 'height: 800px;';
+					} else {
+						echo 'height: 350px';
+					}
+				?>
+			}
+		</style>
+
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>

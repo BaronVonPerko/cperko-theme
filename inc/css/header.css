@@ -16,3 +16,7 @@
     color: white;
     font-size: 16pt;
 }
+
+.site-header .site-branding {
+    background-size: cover;
+}
