@@ -1,0 +1,18 @@
+.site-header .main-navigation {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 40px 0;
+}
+
+.site-header .main-navigation ul {
+    float: right;
+}
+
+.site-header .main-navigation ul li {
+    margin: 0 20px;
+}
+
+.site-header .main-navigation ul li a {
+    color: white;
+    font-size: 16pt;
+}
