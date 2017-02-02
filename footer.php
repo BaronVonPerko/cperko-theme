@@ -14,6 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		<div class="site-info">
 			<span>&copy; <?php echo date("Y"); ?> ChrisPerko.net </span>
 		</div><!-- .site-info -->

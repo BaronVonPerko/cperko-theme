@@ -1,3 +1,30 @@
-footer .site-info {
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.site-footer .menu ul {
+    list-style: none;
     text-align: center;
+    margin: 50px 0 20px;
+    padding: 0;
+}
+
+.site-footer .menu ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.site-footer .site-info {
+    text-align: center;
+    padding-bottom: 55px;
 }
