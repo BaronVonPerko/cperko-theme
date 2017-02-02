@@ -1,0 +1,21 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.site-content {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+body.home .site-content .site-main article.post {
+    padding: 10px 40px 20px;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,0.55);
+    transition: all 250ms ease-in-out;
+    margin: 30px 0;
+}
+
+body.home .site-content .site-main article.post:hover {
+    box-shadow: 0 10px 35px 0 rgba(0,0,0,0.7);
+    transform: scale(1.02);
+}
