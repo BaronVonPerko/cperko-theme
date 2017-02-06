@@ -8,14 +8,16 @@ html, body {
     margin: 0 auto;
 }
 
-body.home .site-content .site-main article.post {
+body.home .site-content .site-main article.post,
+body.blog .site-content .site-main article.post {
     padding: 10px 40px 20px;
     box-shadow: 0 10px 25px 0 rgba(0,0,0,0.55);
     transition: all 250ms ease-in-out;
     margin: 30px 0 80px;
 }
 
-body.home .site-content .site-main article.post:hover {
+body.home .site-content .site-main article.post:hover,
+body.blog .site-content .site-main article.post:hover {
     box-shadow: 0 10px 35px 0 rgba(0,0,0,0.7);
     transform: scale(1.02);
 }

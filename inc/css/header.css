@@ -23,25 +23,6 @@
     font-size: 36pt;
 }
 
-.site-header ul.nav-menu {
-    display: block;
-    opacity: 0;
-    height: 0;
-}
-
-.site-header .main-navigation.toggled ul.nav-menu {
-    opacity: 1;
-    height: auto;
-    width: 100%;
-}
-
-.site-header ul.nav-menu li {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0 0 0;
-    margin-left: 0;
-}
-
 .site-header .site-branding {
     background-size: cover;
 }

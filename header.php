@@ -28,7 +28,7 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php 
-			if( !is_front_page() && !is_home() ): ?>
+			if( !is_front_page() ): ?>
 				<h1 class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<?php bloginfo( 'name' ); ?>
@@ -46,7 +46,7 @@
 			.site-branding {
 				background-image: url(<?php echo get_header_image(); ?>);
 				<?php
-					if( is_front_page() && is_home() ) {
+					if( is_front_page() ) {
 						echo 'height: 800px;';
 					} else {
 						echo 'height: 350px';
@@ -57,7 +57,7 @@
 
 		<div class="site-branding">
 			<?php
-			if ( is_front_page() && is_home() ) : ?>
+			if ( is_front_page() ) : ?>
 				<h1 class="site-title fade-in">
 					<?php bloginfo( 'name' ); ?>
 				</h1>
