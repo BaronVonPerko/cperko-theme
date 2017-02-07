@@ -19,7 +19,25 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+            <div class="intro">
 
+                <h1>Lorem Ipsum</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius enim vel sapien rutrum ultrices. Praesent et venenatis dolor, eu tristique orci. Sed est tortor, convallis vitae bibendum sed, viverra in orci. Vestibulum lacinia, erat at vestibulum gravida, enim est laoreet est, a maximus metus neque sed lorem. Aenean in tempor lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam placerat libero id quam malesuada, a pellentesque arcu vehicula. Nulla at posuere dolor.
+                </p>
+
+            </div>      
+
+            <div class="skills">
+                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/angular-logo.png' ?>" />
+                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/html5-logo.png' ?>" />
+                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/css3-logo.png' ?>" />
+                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/mnet-logo.jpg' ?>" />
+                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/sql-logo.png' ?>" />
+                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/gulp-logo.png' ?>" />
+                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/android-logo.png' ?>" />
+            </div>      
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

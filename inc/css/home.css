@@ -1,0 +1,40 @@
+body.home .site-content {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body.home .intro {
+  padding: 0 20px;
+}
+
+body.home .skills {
+    background-color: rgba(0,0,0,0.6);
+    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 95%, 0 100%);
+    clip-path: polygon(0 0, 100% 15%, 100% 95%, 0 100%);
+    margin: 0 0 30px;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media(max-width: 800px) {
+    body.home .skills {
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 95%, 0 100%);
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+    }
+}
+
+@media(max-width: 500px) {
+    body.home .skills {
+        -webkit-clip-path: polygon(0 0, 100% 1%, 100% 98%, 0 100%);
+        clip-path: polygon(0 0, 100% 1%, 100% 98%, 0 100%);
+    }
+}
+
+body.home .skills img.skill {
+    height: 150px;
+    margin: 20px;
+}
