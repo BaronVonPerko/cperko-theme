@@ -5,7 +5,13 @@ body.home .site-content {
 }
 
 body.home .intro {
-  padding: 0 20px;
+  padding: 0 200px;
+}
+
+@media(max-width: 1100px) {
+    body.home .intro {
+        padding: 0 40px;
+    }
 }
 
 body.home .skills {
@@ -13,11 +19,20 @@ body.home .skills {
     -webkit-clip-path: polygon(0 0, 100% 15%, 100% 95%, 0 100%);
     clip-path: polygon(0 0, 100% 15%, 100% 95%, 0 100%);
     margin: 0 0 30px;
-    padding: 100px 0;
+}
+
+body.home .skills .skills-container {
+    padding: 50px 80px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media(max-width: 900px) {
+    body.home .skills .skills-container {
+        padding: 100px 20px;
+    }
 }
 
 @media(max-width: 800px) {
@@ -34,7 +49,13 @@ body.home .skills {
     }
 }
 
+body.home .skills h1 {
+    color: white;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
 body.home .skills img.skill {
     height: 150px;
-    margin: 20px;
+    margin: 20px 40px;
 }

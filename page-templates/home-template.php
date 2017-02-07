@@ -30,13 +30,19 @@ get_header(); ?>
             </div>      
 
             <div class="skills">
-                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/angular-logo.png' ?>" />
-                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/html5-logo.png' ?>" />
-                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/css3-logo.png' ?>" />
-                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/mnet-logo.jpg' ?>" />
-                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/sql-logo.png' ?>" />
-                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/gulp-logo.png' ?>" />
-                <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/android-logo.png' ?>" />
+                <h1>
+                    Lorem Ipsum
+                </h1>
+
+                <div class="skills-container">
+                    <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/angular-logo.png' ?>" />
+                    <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/html5-logo.png' ?>" />
+                    <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/css3-logo.png' ?>" />
+                    <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/mnet-logo.jpg' ?>" />
+                    <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/sql-logo.png' ?>" />
+                    <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/gulp-logo.png' ?>" />
+                    <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/android-logo.png' ?>" />
+                </div>
             </div>      
 
 		</main><!-- #main -->
