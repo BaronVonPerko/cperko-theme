@@ -1,0 +1,17 @@
+@media(max-width: 800px) {
+    .work-history img {
+        width: 30%;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    .work-history h3 {
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px) {
+    .work-history img {
+        width: 50%;
+    }
+}

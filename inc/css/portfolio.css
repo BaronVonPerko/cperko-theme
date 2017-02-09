@@ -1,0 +1,14 @@
+/* Portfolio.css */
+
+.portfolio .portfolio-content {
+  margin: 30px 0;
+}
+
+#primary article .portfolio .page-content h3 {
+  text-align: center;
+}
+
+.portfolio .portfolio-image {
+  text-align: center;
+  margin: 0 auto;
+}

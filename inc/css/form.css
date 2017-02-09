@@ -1,0 +1,26 @@
+.form-group {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.form-group .form-control {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px;
+}
+
+.form-group textarea {
+    height: 200px;
+}
+
+.cperko-button {
+    width: 200px;
+    padding: 10px;
+    font-size: 16pt;
+}
+
+.message-sent {
+    text-align: center;
+    display: none;
+}
