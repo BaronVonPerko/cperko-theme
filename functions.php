@@ -122,6 +122,13 @@ function cperko_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cperko_scripts' );
 
+function cperko_excerpt( $content ) {
+	return str_replace( '[...]',
+		'<div class="more-link"><a href="'. get_permalink() .'">Continue Reading</a></div>',
+		$content );
+}
+add_filter( 'the_excerpt', 'cperko_excerpt' );
+
 /**
  * Implement the Custom Header feature.
  */
