@@ -173,3 +173,8 @@ require get_stylesheet_directory() . '/inc/function-custom-post-type.php';
  * Ajax
  */
 require get_stylesheet_directory() . '/inc/ajax.php';
+
+/**
+ * Customizer
+ */
+require get_stylesheet_directory() . '/inc/customizer/customize-front-page.php';
