@@ -23,6 +23,18 @@
     font-size: 36pt;
 }
 
+@media(max-width: 599px) {
+    .site-header .main-navigation ul {
+        float: none;
+    }
+    
+    .site-header .main-navigation ul li {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
 .site-header .site-branding {
     background-size: cover;
 }
