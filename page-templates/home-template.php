@@ -22,18 +22,18 @@ get_header(); ?>
             <div class="intro">
 
                 <h1>
-                    <?php echo get_theme_mod( 'cperko-fp-main-title' ); ?>
+                    <?php echo get_theme_mod( 'cperko-fp-main-title', 'Lorem Ipsum' ); ?>
                 </h1>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius enim vel sapien rutrum ultrices. Praesent et venenatis dolor, eu tristique orci. Sed est tortor, convallis vitae bibendum sed, viverra in orci. Vestibulum lacinia, erat at vestibulum gravida, enim est laoreet est, a maximus metus neque sed lorem. Aenean in tempor lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam placerat libero id quam malesuada, a pellentesque arcu vehicula. Nulla at posuere dolor.
+                    <?php echo get_theme_mod( 'cperko-fp-main-text', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius enim vel sapien rutrum ultrices. Praesent et venenatis dolor, eu tristique orci. Sed est tortor, convallis vitae bibendum sed, viverra in orci. Vestibulum lacinia, erat at vestibulum gravida, enim est laoreet est, a maximus metus neque sed lorem. Aenean in tempor lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam placerat libero id quam malesuada, a pellentesque arcu vehicula. Nulla at posuere dolor.' ); ?>
                 </p>
 
             </div>      
 
             <div class="skills">
                 <h1>
-                    Lorem Ipsum
+                    <?php echo get_theme_mod( 'cperko-fp-skills-header', 'Skills' ); ?>
                 </h1>
 
                 <div class="skills-container">
