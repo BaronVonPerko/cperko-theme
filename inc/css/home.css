@@ -59,3 +59,26 @@ body.home .skills img.skill {
     height: 150px;
     margin: 20px 40px;
 }
+
+body.home .recent-posts {
+    text-align: center;
+}
+
+body.home .recent-posts .posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body.home .recent-posts .posts .post {
+    margin: 40px;
+    padding: 20px;
+    min-width: 300px;
+}
+
+body.home .recent-posts .posts .post img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}

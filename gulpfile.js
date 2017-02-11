@@ -20,6 +20,11 @@ gulp.task('sync', ['css'], function() {
 });
 
 
+gulp.task('watch-css', function() {
+    gulp.watch('./inc/css/*.css', ['css']);
+});
+
+
 gulp.task('css', function() {
     gulp.src('inc/**/*.css')
         .pipe(concatCss('custom.css'))

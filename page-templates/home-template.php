@@ -47,9 +47,32 @@ get_header(); ?>
                 </div>
             </div>      
 
+            <div class="recent-posts">
+                <h1>
+                    Recent Posts
+                </h1>
+
+                <?php 
+                    query_posts( array(
+                        'posts_per_page'    => 3,
+                    ) );    
+                    if( have_posts() ): ?>
+                        <div class="posts">
+                            <?php while( have_posts() ): the_post(); ?>
+                                <div class="post">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <h3><?php echo the_title(); ?></h3>
+                                    </a>
+                                    <?php the_post_thumbnail('thumbnail'); ?>
+                                </div> <!-- end .post -->
+                            <?php endwhile; ?>
+                        </div> <!-- end .posts -->
+                    <?php endif; ?>
+            </div> <!-- end .recent-posts' -->
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();
