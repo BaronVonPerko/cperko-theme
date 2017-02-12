@@ -45,7 +45,19 @@ get_header(); ?>
                     <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/gulp-logo.png' ?>" />
                     <img class="skill" src="<?php echo get_stylesheet_directory_uri() . '/images/android-logo.png' ?>" />
                 </div>
-            </div>      
+            </div>     
+
+            <div class="" >
+                <h1>Why Work With Me?</h1>
+
+                <div>
+                    <ul>
+                        <li>Responsive designs make your site look great on every device</li>
+                        <li>Years of experience will ensure the right technologies are used for your project</li>
+                        <li>Perforamnce focussed - don't let a slow internet connection turn away potential customers</li>
+                    </ul>
+                </div>
+            </div>
 
             <div class="recent-posts">
                 <h1>
