@@ -60,6 +60,51 @@ body.home .skills img.skill {
     margin: 20px 40px;
 }
 
+body.home .why-me h1 {
+    text-align: center;
+}
+
+body.home .why-me ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 810px) {
+    body.home .why-me ul {
+        flex-direction: column;
+    }
+}
+
+body.home .why-me ul li {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 5px 25px;
+    margin: 10px 30px;
+    max-width: 280px;
+}
+
+@media(max-width: 1020px) {
+    body.home .why-me ul li {
+        margin: 10px;
+    }
+}
+
+@media(max-width: 810px) {
+    body.home .why-me ul li {
+        max-width: 400px;
+        margin: 10px auto;
+    }
+}
+
+body.home .why-me ul li .title {
+    font-weight: bold;
+    text-align: center;
+}
+
 body.home .recent-posts {
     text-align: center;
 }

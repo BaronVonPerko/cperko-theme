@@ -47,16 +47,35 @@ get_header(); ?>
                 </div>
             </div>     
 
-            <div class="" >
+            <div class="why-me">
                 <h1>Why Work With Me?</h1>
 
-                <div>
-                    <ul>
-                        <li>Responsive designs make your site look great on every device</li>
-                        <li>Years of experience will ensure the right technologies are used for your project</li>
-                        <li>Perforamnce focussed - don't let a slow internet connection turn away potential customers</li>
-                    </ul>
-                </div>
+                <ul>
+                    <li>
+                        <p class="title">
+                            Responsive Design
+                        </p>
+                        <p>
+                            Your site will look great on every device, including tablets and phones.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">
+                            Experience
+                        </p>
+                        <p>
+                            Years of experience will ensure the right technologies are used for your project.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">
+                            Performance
+                        </p>
+                        <p>
+                            I will make sure your site runs as fast as possible, so that it works great for all of your visitors.
+                        </p>
+                    </li>
+                </ul>
             </div>
 
             <div class="recent-posts">
