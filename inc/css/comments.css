@@ -28,3 +28,7 @@
 #comments ol.children li.comment {
     border-top: none;
 }
+
+#comments p.form-submit input.submit {
+    padding: 20px;
+}
