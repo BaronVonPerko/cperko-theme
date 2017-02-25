@@ -31,7 +31,7 @@ body.home .skills .skills-container {
 
 @media(max-width: 900px) {
     body.home .skills .skills-container {
-        padding: 100px 20px;
+        padding: 20px 20px;
     }
 }
 
@@ -58,6 +58,13 @@ body.home .skills h1 {
 body.home .skills img.skill {
     height: 150px;
     margin: 20px 40px;
+}
+
+@media(max-width: 600px) {
+    body.home .skills img.skill {
+        height: 100px;
+        margin: 10px;
+    }
 }
 
 body.home .why-me h1 {
