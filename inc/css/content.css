@@ -50,6 +50,7 @@ article.post footer span {
 aside.widget-area {
     padding: 20px;
     min-width: 320px;
+    border-left: 1px solid rgba(0,0,0,0.2);
 }
 
 aside.widget-area ul {
@@ -59,7 +60,6 @@ aside.widget-area ul {
 }
 
 aside.widget-area .widget {
-    border: 1px solid rgba(0,0,0,0.2);
     padding: 5px;
 }
 
