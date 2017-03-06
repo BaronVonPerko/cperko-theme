@@ -27,18 +27,16 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php 
-			if( !is_front_page() ): ?>
-				<h1 class="site-title">
+			<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				Menu
+			</button>-->
+			<?php if ( !is_front_page() ) : ?>
+				<h1 class="site-title desktop-only">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<?php bloginfo( 'name' ); ?>
 					</a>
 				</h1>
 			<?php endif; ?>
-
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				Menu
-			</button>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
@@ -68,7 +66,19 @@
 					<p class="site-description fade-in"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 				<?php endif; ?>
 			<?php endif; ?>
+			<?php if ( !is_front_page() ) : ?>
+				<h1 class="site-title mobile-only">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<?php bloginfo( 'name' ); ?>
+					</a>
+				</h1>
+			<?php endif; ?>
 		</div><!-- .site-branding -->
+
+
+		<nav class="mobile-nav">
+			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'mobile-menu' ) ); ?>
+		</nav>
 		
 	</header><!-- #masthead -->
 

@@ -1,3 +1,17 @@
+.mobile-only {
+    display: none;
+}
+
+@media(max-width: 599px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
+
 html, body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -71,6 +85,12 @@ article.post footer span.comments-link, article.post footer span.edit-link {
 
 .content-area {
     padding: 20px;
+}
+
+@media(max-width: 599px) {
+    .content-area {
+        padding: 0;
+    }
 }
 
 aside.widget-area {
