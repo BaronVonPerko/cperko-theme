@@ -2,7 +2,6 @@
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 40px 0 20px;
-    box-shadow: 0px 20px 20px 10px rgba(0, 0, 0, 0.8);
 }
 
 .site-header .main-navigation ul {
@@ -64,21 +63,103 @@
     background-size: cover;
 }
 
+.site-header .site-branding .site-branding-container {
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+@media(max-width: 599px) {
+    .site-header .site-branding .site-branding-container {
+        flex-direction: column;
+    }
+}
+
+@keyframes flex-in {
+    from {flex-grow: 0;}
+    to {flex-grow: 6;}
+}
+
+.site-header .site-branding .site-branding-container .site-branding-left {
+    flex-grow: 6;
+    animation-name: flex-in;
+    animation-duration: 4s;
+    background-color: #FF5851;
+}
+
+.site-header .site-branding .site-branding-container .site-branding-right {
+    flex-grow: 1;
+    display: flex;
+}
+
+@keyframes slide-in-from-right {
+    0%{ transform: translateX(400px); }
+    60%{ transform: translateX(400px); }
+    100%{ transform: translateX(0); } 
+}
+
+.site-header .site-branding .site-branding-container .site-branding-right .text {
+    font-size: 30pt;
+    align-self: flex-end;
+    margin: 0 0 50px 0;
+    width: 100%;
+}
+
+@media(max-width: 599px) {
+    .site-header .site-branding .site-branding-container .site-branding-right .text {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.site-header .site-branding .site-branding-container .site-branding-right .text p {
+    margin: 0;
+    text-align: right;
+    margin-right: 20px;
+    animation-name: slide-in-from-right;
+    animation-duration: 4.3s;
+}
+
+.site-header .site-branding .site-branding-container .site-branding-right .text p:first-child {
+    margin-right: 100px;
+    animation-name: slide-in-from-right;
+    animation-duration: 4s;
+}
+
+@media(max-width: 599px) {
+    .site-header .site-branding .site-branding-container .site-branding-right .text p {
+        font-size: 16pt;
+        margin: 30px 0;
+    }
+    .site-header .site-branding .site-branding-container .site-branding-right .text p:first-child {
+        margin-right: 0;
+    }
+}
+
 .site-header .site-branding h1.site-title,
 .site-header .site-branding p.site-description {
-    color: white;
+    color: #333333;
     text-align: center;
     margin: 0;
-    transition: opacity 250ms ease-in-out;
+    transition: opacity 4s ease-in-out;
+}
+
+@media(max-width: 599px) {
+    .site-header .site-branding p.site-description {
+        transition: opacity 250ms ease-in-out;
+    }
 }
 
 .site-header .site-branding h1.site-title {
     font-size: 40pt;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .site-header .site-branding h1.site-title a {
-    color: white;
+    color: #333333;
     text-decoration: none;
 }
 
@@ -103,6 +184,7 @@
 
 .site-header .site-branding p.site-description {
     font-size: 30pt;
+    padding-bottom: 200px;
 }
 
 .site-header .main-navigation .site-title {
