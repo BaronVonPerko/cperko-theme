@@ -79,8 +79,8 @@
 }
 
 @keyframes flex-in {
-    from {flex-grow: 0;}
-    to {flex-grow: 6;}
+    from { flex-grow: 2; }
+    to { flex-grow: 6; }
 }
 
 .site-header .site-branding .site-branding-container .site-branding-left {
@@ -88,6 +88,13 @@
     animation-name: flex-in;
     animation-duration: 4s;
     background-color: #FF5851;
+}
+
+@media(min-width: 600px) {
+    .site-header .site-branding .site-branding-container .site-branding-left {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+    }
 }
 
 .site-header .site-branding .site-branding-container .site-branding-right {
@@ -118,13 +125,13 @@
 .site-header .site-branding .site-branding-container .site-branding-right .text p {
     margin: 0;
     text-align: right;
-    margin-right: 20px;
+    margin-right: 80px;
     animation-name: slide-in-from-right;
     animation-duration: 4.3s;
 }
 
 .site-header .site-branding .site-branding-container .site-branding-right .text p:first-child {
-    margin-right: 100px;
+    margin-right: 150px;
     animation-name: slide-in-from-right;
     animation-duration: 4s;
 }
@@ -144,13 +151,11 @@
     color: #333333;
     text-align: center;
     margin: 0;
-    transition: opacity 4s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
-@media(max-width: 599px) {
-    .site-header .site-branding p.site-description {
-        transition: opacity 250ms ease-in-out;
-    }
+.site-header .site-branding p.site-description {
+    transition-delay: 400ms;
 }
 
 .site-header .site-branding h1.site-title {
@@ -161,6 +166,11 @@
 .site-header .site-branding h1.site-title a {
     color: #333333;
     text-decoration: none;
+}
+
+.site-header .site-branding p.site-description {
+    font-size: 30pt;
+    padding-bottom: 200px;
 }
 
 @media(max-width: 599px) {
@@ -180,11 +190,6 @@
     .site-header .site-branding {
         height: auto;
     }
-}
-
-.site-header .site-branding p.site-description {
-    font-size: 30pt;
-    padding-bottom: 200px;
 }
 
 .site-header .main-navigation .site-title {

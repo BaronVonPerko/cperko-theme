@@ -80,7 +80,7 @@
 				<div class="site-branding-right">
 					<div class="text">
 						<p>I build things&nbsp;</p>
-						<p>for the web</p>
+						<p>for the web.</p>
 					</div>
 				</div>
 			</div>
