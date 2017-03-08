@@ -5,12 +5,26 @@ body.home .site-content {
 }
 
 body.home .intro {
-  padding: 0 200px;
+  padding: 100px 280px;
+  position: relative;
+}
+
+@keyframes bounce-intro-in {
+    0%{ transform: scale(0.3); opacity: 0; }
+    70%{ transform: scale(0.3); opacity: 0; }
+    95%{ transform: scale(1.1); opacity: 1; }
+    100%{ transform: scale(1.0); opacity: 1; }
+}
+
+body.home .intro p {
+    font-size: 22pt;
+    animation-name: bounce-intro-in;
+    animation-duration: 4s;
 }
 
 @media(max-width: 1100px) {
     body.home .intro {
-        padding: 0 40px;
+        padding: 60px 40px;
     }
 }
 

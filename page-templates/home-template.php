@@ -20,7 +20,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
             <div class="intro">
-
                 <h1>
                     <?php echo get_theme_mod( 'cperko-fp-main-title', 'Lorem Ipsum' ); ?>
                 </h1>
