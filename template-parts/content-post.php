@@ -34,7 +34,7 @@
 			// 	the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			// ) );
 
-			the_post_thumbnail('medium');
+			the_post_thumbnail('full', array( 'class' => 'post-img' ));
 			the_content();
 
 			wp_link_pages( array(

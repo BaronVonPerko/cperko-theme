@@ -33,8 +33,12 @@
 			// 	wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'cperko' ), array( 'span' => array( 'class' => array() ) ) ),
 			// 	the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			// ) );
-
-			the_post_thumbnail('medium');
+			?>
+			<div class="post-excerpt-image-wrapper">
+				<?php the_post_thumbnail('large', array( 'class' => 'img-blog-excerpt' )); ?>
+			</div>
+			
+			<?php
 			the_excerpt();
 
 			wp_link_pages( array(

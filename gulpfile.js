@@ -20,7 +20,7 @@ gulp.task('sync', ['css'], function() {
 });
 
 
-gulp.task('watch-css', function() {
+gulp.task('watch-css', ['css'], function() {
     gulp.watch('./inc/css/*.css', ['css']);
 });
 

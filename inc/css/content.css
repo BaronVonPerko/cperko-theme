@@ -25,10 +25,24 @@ html, body {
     flex-wrap: nowrap;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 900px) {
     .site-content {
         flex-direction: column;
         padding: 0;
+    }
+}
+
+body.home .site-content .site-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media(max-width: 1460px) {
+    body.home .site-content .site-main { 
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -37,13 +51,16 @@ body.blog .site-content .site-main article.post {
     padding: 10px 40px 20px;
     box-shadow: 0 10px 25px 0 rgba(0,0,0,0.55);
     transition: all 250ms ease-in-out;
-    margin: 30px 0 80px;
+    margin: 30px 20px 80px;
+    max-width: 700px;
+    min-width: 500px;
 }
 
 @media(max-width: 700px) {
     body.blog .site-content .site-main article.post {
         padding: 5px 5px 10px;
-        margin: 10px 0 30px;
+        margin: 10px 8px 30px;
+        min-width: 0;
     }
 }
 
@@ -51,6 +68,10 @@ body.home .site-content .site-main article.post:hover,
 body.blog .site-content .site-main article.post:hover {
     box-shadow: 0 10px 35px 0 rgba(0,0,0,0.7);
     transform: scale(1.02);
+}
+
+body.blog .site-content .site-main article.post h2.entry-title {
+    text-align: center;
 }
 
 article.post a {
@@ -96,6 +117,7 @@ article.post footer span.comments-link, article.post footer span.edit-link {
 aside.widget-area {
     padding: 20px;
     min-width: 320px;
+    max-width: 400px;
     border-left: 1px solid rgba(0,0,0,0.2);
 }
 
@@ -116,4 +138,20 @@ aside.widget-area .widget .widget-title {
 
 aside.widget-area .github-widget {
     border: none;
+}
+
+img.post-img {
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+}
+
+.post-excerpt-image-wrapper {
+    display: flex;
+}
+
+img.img-blog-excerpt {
+    text-align: center;
+    margin: 0 auto;
 }
