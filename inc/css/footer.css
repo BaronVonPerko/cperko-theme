@@ -3,14 +3,14 @@
     color: white;
 }
 
-.site-footer ul.menu {
+.site-footer .menu ul {
     list-style: none;
     text-align: center;
     margin: 50px 0 20px;
     padding: 0;
 }
 
-.site-footer ul.menu li {
+.site-footer .menu ul li {
     display: inline-block;
     margin: 10px 20px;
 }
