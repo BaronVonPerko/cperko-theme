@@ -54,37 +54,39 @@
 			}
 		</style>-->
 
-		<div class="site-branding">
-			<div class="site-branding-container">
-				<div class="site-branding-left">
-					<?php
-					if ( is_front_page() ) : ?>
-						<h1 class="site-title fade-in">
-							<?php bloginfo( 'name' ); ?>
-						</h1>
-						
+		<?php if ( is_front_page() ) : ?>
+			<div class="site-branding">
+				<div class="site-branding-container">
+					<div class="site-branding-left">
 						<?php
-						$description = get_bloginfo( 'description', 'display' );
-						if ( $description || is_customize_preview() ) : ?>
-							<p class="site-description fade-in"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-						<?php endif; ?>
-					<?php endif; ?>
-					<?php if ( !is_front_page() ) : ?>
-						<h1 class="site-title mobile-only">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						if ( is_front_page() ) : ?>
+							<h1 class="site-title fade-in">
 								<?php bloginfo( 'name' ); ?>
-							</a>
-						</h1>
-					<?php endif; ?>
-				</div>
-				<div class="site-branding-right">
-					<div class="text">
-						<p>I build things&nbsp;</p>
-						<p>for the web.</p>
+							</h1>
+							
+							<?php
+							$description = get_bloginfo( 'description', 'display' );
+							if ( $description || is_customize_preview() ) : ?>
+								<p class="site-description fade-in"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+							<?php endif; ?>
+						<?php endif; ?>
+						<?php if ( !is_front_page() ) : ?>
+							<h1 class="site-title mobile-only">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+									<?php bloginfo( 'name' ); ?>
+								</a>
+							</h1>
+						<?php endif; ?>
+					</div>
+					<div class="site-branding-right">
+						<div class="text">
+							<p>I build things&nbsp;</p>
+							<p>for the web.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div><!-- .site-branding -->
+			</div><!-- .site-branding -->
+		<?php endif; ?>
 
 
 		<nav class="mobile-nav">
