@@ -140,6 +140,11 @@ aside.widget-area .github-widget {
     border: none;
 }
 
+aside.widget-area .widget_recent_entries ul li {
+    padding: 10px 0;
+    line-height: 20px;
+}
+
 img.post-img {
     text-align: center;
     margin: 10px auto;
