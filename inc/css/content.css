@@ -17,7 +17,6 @@ html, body {
 }
 
 .site-content {
-    max-width: 1200px;
     padding: 20px;
     margin: 0 auto;
     display: flex;
@@ -164,4 +163,8 @@ img.post-featured-img {
 img.img-blog-excerpt {
     text-align: center;
     margin: 0 auto;
+}
+
+body.single article {
+    max-width: 1000px;
 }
