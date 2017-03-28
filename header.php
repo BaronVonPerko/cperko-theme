@@ -41,19 +41,6 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
-		<!--<style>
-			.site-branding {
-				background-image: url(<?php echo get_header_image(); ?>);
-				<?php
-					if( is_front_page() ) {
-						echo 'height: 800px;';
-					} else {
-						echo 'height: 350px';
-					}
-				?>
-			}
-		</style>-->
-
 		<?php if ( is_front_page() ) : ?>
 			<div class="site-branding">
 				<div class="site-branding-container">
@@ -87,12 +74,14 @@
 				</div>
 			</div><!-- .site-branding -->
 		<?php endif; ?>
-
-
-		<nav class="mobile-nav">
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'mobile-menu' ) ); ?>
-		</nav>
 		
 	</header><!-- #masthead -->
+
+	<div class="nav-menu-mobile-button">Menu</div>
+
+	<nav class="mobile-nav">
+		<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'mobile-menu' ) ); ?>
+		<div class="close">Close</div>
+	</nav>
 
 	<div id="content" class="site-content">
