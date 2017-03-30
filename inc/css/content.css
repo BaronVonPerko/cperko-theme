@@ -22,6 +22,7 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: flex-end;
 }
 
 .post-content {
@@ -29,7 +30,7 @@ html, body {
     overflow-x: hidden;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1150px) {
     .site-content {
         flex-direction: column;
         padding: 0;
