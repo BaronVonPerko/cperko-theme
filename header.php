@@ -27,6 +27,8 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
+		<div class="nav-menu-mobile-button">Menu</div>
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 				Menu
@@ -76,8 +78,6 @@
 		<?php endif; ?>
 		
 	</header><!-- #masthead -->
-
-	<div class="nav-menu-mobile-button">Menu</div>
 
 	<nav class="mobile-nav">
 		<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'mobile-menu' ) ); ?>

@@ -181,14 +181,9 @@
 @media(max-width: 599px) {
     .nav-menu-mobile-button {
         display: block;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
         height: 40px;
         background-color: rgba(0, 0, 0, 0.8);
         color: white;
-        z-index: 99;
         text-align: center;
         font-weight: bold;
         text-transform: uppercase;
