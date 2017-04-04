@@ -111,6 +111,13 @@ article.post footer span.comments-link, article.post footer span.edit-link {
 
 .content-area {
     padding: 20px;
+    margin-right: 80px;
+}
+
+@media(max-width: 1350px) {
+    .content-area {
+        margin-right: 0;
+    }
 }
 
 @media(max-width: 599px) {
