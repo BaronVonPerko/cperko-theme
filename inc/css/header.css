@@ -1,12 +1,24 @@
 .site-header .main-navigation {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 40px 0 20px;
+    padding: 10px 100px 20px;
 }
 
 .site-header .main-navigation ul {
     float: right;
     margin-top: 12px;
+}
+
+@media(max-width: 900px) {
+    .site-header .main-navigation ul {
+        float: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .site-header .main-navigation {
+        padding: 10px 0 20px;
+    }
 }
 
 .site-header .main-navigation ul li {
@@ -15,7 +27,13 @@
 
 .site-header .main-navigation ul li a {
     color: white;
-    font-size: 16pt;
+    font-size: 20pt;
+}
+
+@media(max-width: 800px) {
+    .site-header .main-navigation ul li a {
+        font-size: 16pt;
+    }
 }
 
 .site-header span.menu-toggle {
