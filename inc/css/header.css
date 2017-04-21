@@ -233,6 +233,7 @@
         opacity: 1;
         z-index: 99;
         transform: translateY(0);
+        pointer-events: all;
     }
 
     .mobile-nav ul {
